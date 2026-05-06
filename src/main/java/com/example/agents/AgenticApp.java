@@ -2,6 +2,7 @@ package com.example.agents;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 /**
  * Entry point for the Spring AI multi-agent demo.
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *   { "goal": "Competitive analysis of EV cars" }
  */
 @SpringBootApplication
+@EnableConfigurationProperties(AgentProperties.class)
 public class AgenticApp {
 
     public static void main(String[] args) {
